@@ -11,5 +11,6 @@ lazy val root = (project in file(".")).
     libraryDependencies ++= Seq(
       akkaHttp % Provided,
       scalaTest % Test,
-    )
+    ),
+    scalacOptions += "-unchecked"
   )
